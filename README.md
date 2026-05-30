@@ -12,6 +12,7 @@ Pro Lesson ein eigener Unterordner. Naming-Schema: `<Unit-Nr>-<Position-in-Unit>
 huggingface-context-course/
 ├── 2-3-building-mcp-servers-with-python/   # Unit 2, Position 3
 ├── 2-7-hands-on-build-and-deploy-mcp-server/  # (folgt)
+├── 3-2-building-plugins/                   # Unit 3, Position 2 — text-processor-plugin
 └── ...
 ```
 
@@ -33,7 +34,7 @@ pip install -r requirements.txt
 | 0 | Onboarding | ✓ 2026-05-14 |
 | 1 | Agent Skills | ✓ 2026-05-16 |
 | 2 | Model Context Protocol | In Arbeit (Lesson-Stoff durchgearbeitet 2026-05-23, Hands-On läuft) |
-| 3 | Plugins | offen |
+| 3 | Plugins | In Arbeit (Stoff durchgearbeitet 2026-05-30, Hands-On `3-2-building-plugins/` liegt) |
 | 4 | Subagents | offen |
 | 5 | Hooks | offen |
 | 6 | Bonus: Nano Harness | offen |
