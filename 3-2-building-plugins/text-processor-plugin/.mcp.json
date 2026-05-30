@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "text-processor": {
+      "url": "https://McCavity2-text-processor-mcp.hf.space/gradio_api/mcp/"
+    }
+  }
+}

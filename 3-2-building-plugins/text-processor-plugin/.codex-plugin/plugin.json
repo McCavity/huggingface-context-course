@@ -1,0 +1,10 @@
+{
+  "name": "text-processor-plugin",
+  "version": "1.0.0",
+  "description": "Text analysis skills powered by the text-processor MCP server",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Text Processor"
+  }
+}

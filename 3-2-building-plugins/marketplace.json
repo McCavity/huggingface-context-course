@@ -1,0 +1,11 @@
+{
+  "name": "local-example-plugins",
+  "owner": { "name": "Henning Halfpap" },
+  "plugins": [
+    {
+      "name": "text-processor-plugin",
+      "source": "./text-processor-plugin",
+      "description": "Text analysis skills powered by the text-processor MCP server"
+    }
+  ]
+}
