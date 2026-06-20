@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.command // \"\"' | grep -Eq 'rm -rf|:\\(\\)\\{.*\\|.*&.*\\}:' && { echo 'blocked: dangerous shell pattern' >&2; exit 2; } || exit 0"
+          }
+        ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "http", "url": "http://localhost:8001/event",
+            "headers": { "X-Platform": "claude-code" } }
+        ]
+      }
+    ],
+    "PostToolUse": [{ "matcher": "*", "hooks": [{ "type": "http", "url": "http://localhost:8001/event", "headers": { "X-Platform": "claude-code" } }] }],
+    "UserPromptSubmit": [{ "hooks": [{ "type": "http", "url": "http://localhost:8001/event", "headers": { "X-Platform": "claude-code" } }] }],
+    "Stop":            [{ "hooks": [{ "type": "http", "url": "http://localhost:8001/event", "headers": { "X-Platform": "claude-code" } }] }],
+    "SessionStart":    [{ "hooks": [{ "type": "http", "url": "http://localhost:8001/event", "headers": { "X-Platform": "claude-code" } }] }]
+  }
+}

@@ -1,0 +1,19 @@
+# Web framework and ASGI server
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# Async HTTP client (token exchange, userinfo)
+httpx>=0.27.0
+
+# Signed session cookies (itsdangerous is used by Starlette's SessionMiddleware)
+starlette>=0.37.0
+itsdangerous>=2.2.0
+
+# JWT verification with RSA/JWKS support
+PyJWT[crypto]>=2.8.0
+cryptography>=42.0.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0   # also used by FastAPI TestClient
