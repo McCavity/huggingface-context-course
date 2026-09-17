@@ -3,34 +3,34 @@
     "calculator": {
       "command": "python",
       "args": [
-        "/Users/hhalfpap/git/projects/own/huggingface-context-course/2-3-building-mcp-servers-with-python/calculator_server.py"
+        "./calculator_server.py"
       ],
       "directTools": true
     },
     "documentation": {
       "command": "python",
       "args": [
-        "/Users/hhalfpap/git/projects/own/huggingface-context-course/2-3-building-mcp-servers-with-python/documentation_server.py"
+        "./documentation_server.py"
       ],
       "directTools": false
     },
     "safe-operations": {
       "command": "python",
       "args": [
-        "/Users/hhalfpap/git/projects/own/huggingface-context-course/2-3-building-mcp-servers-with-python/safe-operations_server.py"
+        "./safe-operations_server.py"
       ],
       "directTools": false
     },
     "file-analyzer": {
       "command": "python",
       "args": [
-        "/Users/hhalfpap/git/projects/own/huggingface-context-course/2-3-building-mcp-servers-with-python/file-analyzer_server.py"
+        "./file-analyzer_server.py"
       ]
     },
     "prompts": {
       "command": "python",
       "args": [
-        "/Users/hhalfpap/git/projects/own/huggingface-context-course/2-3-building-mcp-servers-with-python/prompts-server.py"
+        "./prompts-server.py"
       ]
     },
     "text-gradio": {
